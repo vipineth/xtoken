@@ -8,11 +8,14 @@
     "start": "next start"
   },
   "dependencies": {
+    "autoprefixer": "^10.0.4",
+    "ethcall": "^3.1.1",
+    "ethers": "5.0.8",
+    "isomorphic-unfetch": "^3.1.0",
     "next": "latest",
+    "postcss": "^8.1.10",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "autoprefixer": "^10.0.4",
-    "postcss": "^8.1.10",
     "tailwindcss": "^2.0.2"
   }
 }

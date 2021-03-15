@@ -1,3 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.active-menu {
+  background: linear-gradient(
+    99.23deg,
+    #943bf3 10.32%,
+    #5327ee 96.35%
+  );
+  margin-right: 0;
+  margin-bottom: 8px;
+}
+
+.bg-color {
+  background: linear-gradient(
+    99.23deg,
+    #943bf3 10.32%,
+    #5327ee 96.35%
+  );
+}
+
+@keyframes donut-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.donut {
+  display: inline-block;
+  border: 8px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #fff;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  -webkit-animation: donut-spin 1.2s linear infinite;
+  animation: donut-spin 1.2s linear infinite;
+}
