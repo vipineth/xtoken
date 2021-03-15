@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Head from 'next/head';
 import Loading from '../components/loading';
 import Main from '../components/main';
 import Sidebar from '../components/sidebar';
@@ -40,6 +41,13 @@ export default function App() {
 
   return (
     <div style={{ minHeight: '640px' }} class='bg-gray-100'>
+      <Head>
+        <title>xToken Staking Returns Dashboard</title>
+        <meta
+          name='viewport'
+          content='initial-scale=1.0, width=device-width'
+        />
+      </Head>
       <div class='h-screen flex overflow-hidden bg-gray-100'>
         {data.tokens ? (
           <>
